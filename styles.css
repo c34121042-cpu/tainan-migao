@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5eddf;
+  color: #39291f;
+  font: 1rem/1.7 "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+.masthead, main {
+  width: min(100% - 2rem, 50rem);
+  margin-inline: auto;
+}
+
+.masthead {
+  padding: clamp(2.5rem, 8vw, 5rem) 0 1.5rem;
+}
+
+h1, h2, h3 {
+  font-family: "DFKai-SB", KaiTi, "Noto Serif TC", serif;
+  line-height: 1.18;
+}
+
+h1 {
+  margin: 0;
+  color: #763b2b;
+  font-size: clamp(2.65rem, 8vw, 5.1rem);
+}
+
+h2 {
+  display: inline-block;
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  border-bottom: .18rem solid #ac6247;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+.shop {
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid #c3a786;
+  border-radius: .65rem;
+  background: #fffaf0;
+  box-shadow: .25rem .28rem 0 #e4d2ba;
+}
+
+.shop-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+}
+
+.status {
+  padding: 0 .6rem;
+  border: 1px solid #9a7856;
+  border-radius: .45rem;
+  background: #f4e4c7;
+}
+
+.description {
+  margin: .65rem 0 1.15rem;
+}
+
+.shop-details {
+  display: grid;
+  gap: 1.15rem;
+}
+
+h4 {
+  margin: 0;
+  color: #763b2b;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: .35rem .75rem;
+  margin: .4rem 0 .85rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: #803d2a;
+  text-underline-offset: .2em;
+}
+
+.map {
+  display: inline-block;
+  padding: .35rem .65rem;
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+}
+
+.shop-sources {
+  margin-top: 1.2rem;
+  padding-top: .75rem;
+  border-top: 1px dashed #a78766;
+  font-size: .92rem;
+}
+
+.shop-sources p {
+  margin: .25rem 0;
+}
+
+.shop-sources ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  margin: .5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .shop-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.district + .district {
+  margin-top: 2.5rem;
+}
+
+.shop-header--illustrated {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.shop-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem .75rem;
+  min-width: 0;
+}
+
+.shop-illustration {
+  display: block;
+  width: clamp(4.25rem, 18vw, 7rem);
+  height: auto;
+  object-fit: contain;
+}
